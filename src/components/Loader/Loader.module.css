@@ -1,0 +1,33 @@
+.container {
+    width: 120px;
+    height: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    text-align: center;
+}
+
+.loading {
+    width: 120px;
+    height: 22px;
+    border-radius: 20px;
+    color: var(--accent-color);
+    border: 2px solid;
+    position: relative;
+}
+.loading::before {
+    content: '';
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: p6 2s infinite;
+}
+@keyframes p6 {
+    100% {
+        inset: 0;
+    }
+}
