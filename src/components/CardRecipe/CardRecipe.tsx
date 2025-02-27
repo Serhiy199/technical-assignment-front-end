@@ -25,14 +25,18 @@ export default function CardProducts({
 
     return (
         <li className={css.item}>
-            <Link className={css.card} to={`/movies/${listRecipe.idMeal}`} state={location}>
+            <Link className={css.card} to={`/recipe/${listRecipe.idMeal}`} state={location}>
                 <div className={css.poster}>
-                    <img src={listRecipe.strMealThumb ?? undefined} alt={listRecipe.title ?? ''} />
+                    <img
+                        className={css.img}
+                        src={listRecipe.strMealThumb ?? undefined}
+                        alt={listRecipe.title ?? ''}
+                    />
                 </div>
 
                 <div className={css.itemSection}>
                     <div className={css.imgTextTitle}>
-                        <h2 className={css.productTitle}>{listRecipe.strArea}</h2>
+                        <h2 className={css.productTitle}>{listRecipe.strMeal}</h2>
                         <button type="button" className={css.btn}>
                             🛒
                         </button>
@@ -40,7 +44,7 @@ export default function CardProducts({
 
                     <div className={css.priceText}>
                         <p className={css.text}>{listRecipe.strCategory}</p>
-                        <p className={css.text}>{listRecipe.strArea}</p>
+                        <p className={css.text}>Country: {listRecipe.strArea}</p>
                     </div>
                 </div>
             </Link>

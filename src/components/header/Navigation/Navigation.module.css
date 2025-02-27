@@ -1,0 +1,41 @@
+.navigation {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: block;
+    }
+
+    .menu {
+        display: inline-flex;
+        gap: 32px;
+    }
+
+    .menuLink {
+        color: var(--title-text-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+
+    .menuLink:focus,
+    .menuLink:hover {
+        color: var(--accent-color);
+    }
+
+    .isActive {
+        color: var(--accent-color);
+    }
+
+    .menuLinkCategory {
+        color: var(--title-text-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+
+    .menuLinkCategory:hover {
+        color: var(--accent-color);
+    }
+}

@@ -1,7 +1,7 @@
 import '../../index.css';
 
 import { Link } from 'react-router-dom';
-import css from '../app/styles/not-found.module.css';
+import css from './NotFoundPage.module.css';
 import Button from '../../components/Button/Button';
 import clsx from 'clsx';
 

@@ -1,5 +1,5 @@
 import { createSlice, createSelector } from '@reduxjs/toolkit';
-import { fetchContacts, addContact } from './contactsOps';
+import { fetchContacts, addContact } from './recipeOps';
 import { selectNameFilter } from './filtersSlice';
 
 const recipesReducer = createSlice({
