@@ -15,16 +15,19 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'));
 function App() {
     return (
         <QueryClientProvider client={queryClient}>
-            <Header />
-            <Suspense fallback={<Loader />}>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    {/* <Route path="/recipe/" element={<RecipeDetailsPage />} /> */}
-                    <Route path="/recipe/:recipeId" element={<RecipeDetailsPage />} />
-                    <Route path="/favorite" element={<FavoritePage />} />
-                    <Route path="*" element={<NotFoundPage />} />
-                </Routes>
-            </Suspense>
+            <>
+                {' '}
+                <Header />
+                <Suspense fallback={<Loader />}>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        {/* <Route path="/recipe/" element={<RecipeDetailsPage />} /> */}
+                        <Route path="/recipe/:recipeId" element={<RecipeDetailsPage />} />
+                        <Route path="/favorite" element={<FavoritePage />} />
+                        <Route path="*" element={<NotFoundPage />} />
+                    </Routes>
+                </Suspense>
+            </>
         </QueryClientProvider>
     );
 }
