@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import css from './Header.module.css';
 import '../../index.css';
 import Logo from '../logo/logo';
-import Navigation from './Navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
 
 export default function Header() {
     return (
