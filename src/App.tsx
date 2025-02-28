@@ -6,7 +6,7 @@ import './App.css';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClient } from './shared/api/query-client';
 import Loader from './components/Loader/Loader';
-import Header from './components/Header/Header';
+import Header from './components/header/header';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const RecipeDetailsPage = lazy(() => import('./pages/RecipeDetailsPage/RecipeDetailsPage'));
